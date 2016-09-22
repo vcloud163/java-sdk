@@ -26,7 +26,15 @@ Java-SDK 是用于服务器端点播上传的软件开发工具包，提供简�
 - 下载 java sdk，如果安装了git命令行，执行 git clone https://github.com/vcloud/java-sdk.git或者直接在github下载zip包；
 - 参照 API 说明和 sdk 中提供的 demo，开发代码。
 
-### 3.2 https支持
+### 3.3 sdk 依赖包
+
+- httpclient5-cache（5.0-alpha1）
+- fastjson（1.2.7）
+- httpmime（4.5.2）
+- fluent-h（4.5.2）
+- commons-logging（1.1.1）
+
+### 3.2 https 支持
 
 默认使用https协议，如需修改为http协议，请在sdk包中Config目录修改。
 
