@@ -112,6 +112,14 @@ public class UploadVideoServiceImpl implements UploadVideoService {
 					}
 				 }
 				 throw new VcloudException(e);
+			 }finally {
+				 if(null != in){
+					 try {
+						 in.close();
+					 } catch (IOException e1) {
+						 throw new VcloudException(e1);
+					 }
+				 }
 			 }
 		}
 		return null;
