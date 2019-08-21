@@ -226,8 +226,8 @@ public class UploadUtil {
 	public GetUploadHostParam getUploadHost() throws IOException, VcloudException{
 		
 		/* 接口 */
-		String url = "http://wanproxy.127.net/lbs?version=1.0&bucketname=" + bucket;		
-		//String url = Config.getGetUploadHostURL();
+		//String url = "http://wanproxy.127.net/lbs?version=1.0&bucketname=" + bucket;
+		String url = Config.getGetUploadHostURL() + "&bucketname=" + bucket ;
 			
 		/* 得到Json数据 */
 		GetUploadHostParam getUploadHostParam = (GetUploadHostParam) jsonParamObjectBuilder(url, GetUploadHostParam.class, null);		

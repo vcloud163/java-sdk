@@ -189,8 +189,8 @@ public final class Config {
 	/** 视频上传初始化的接口名   默认值    /app/vod/upload/init*/
 	private static String initUploadVideoInterfaceName = "/app/vod/upload/init";
 	
-//	/** 获取上传加速节点地址的URL 默认值  http://wanproxy.127.net/lbs?version=1.0*/
-//	private static String getUploadHostURL = "http://wanproxy.127.net/lbs?version=1.0";
+	/** 获取上传加速节点地址的URL 默认值  http://wanproxy.127.net/lbs?version=1.0*/
+	private static String getUploadHostURL = "http://wanproxy.127.net/lbs?version=1.0";
 	
 	/** 根据对象名查询视频主ID的URL 默认值   https://vcloud.163.com/app/vod/video/query*/
 	private static String queryVideoIDURL = "https://vcloud.163.com/app/vod/video/query";
@@ -1530,25 +1530,25 @@ public final class Config {
 	}
 	
 
-//	/**
-//	 * 
-//	* <p>Title: getGetUploadHostURL</p>
-//	* <p>Description: 取得获取上传加速节点地址的URL</p>
-//	* @return 获取上传加速节点地址的URL
-//	 */
-//	public static String getGetUploadHostURL() {
-//		return getUploadHostURL;
-//	}
-//
-//	/**
-//	 * 
-//	* <p>Title: setGetUploadHostURL</p>
-//	* <p>Description: 设置获取上传加速节点地址的URL</p>
-//	* @param getUploadHostURL 获取上传加速节点地址的URL
-//	 */
-//	private static void setGetUploadHostURL(String getUploadHostURL) {
-//		Config.getUploadHostURL = getUploadHostURL;
-//	}
+	/**
+	 *
+	* <p>Title: getGetUploadHostURL</p>
+	* <p>Description: 取得获取上传加速节点地址的URL</p>
+	* @return 获取上传加速节点地址的URL
+	 */
+	public static String getGetUploadHostURL() {
+		return getUploadHostURL;
+	}
+
+	/**
+	 *
+	* <p>Title: setGetUploadHostURL</p>
+	* <p>Description: 设置获取上传加速节点地址的URL</p>
+	* @param getUploadHostURL 获取上传加速节点地址的URL
+	 */
+	private static void setGetUploadHostURL(String getUploadHostURL) {
+		Config.getUploadHostURL = getUploadHostURL;
+	}
 
 	/**
 	 * 
